@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-image: url('https://images8.alphacoders.com/905/thumb-1920-905232.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  background: url('https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif') center/cover no-repeat;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.search-bar{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input{
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 3px 3px 3px 20px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.info-wrapper{
+  color: #fff;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-wrapper .cityName{
+  font-size: 20px;
+  margin: 3px 0px 5px;
+}
+
+.info-wrapper .weather-state{
+  font-size: 13px;
+}
+
+.info-wrapper img{ 
+  width: 70px;
+  height: 70px;
+}
+
+.info-wrapper .teperature{
+  font-size: 80px;
+  font-weight: lighter;
+  position: relative;
+  line-height: 1;
+}
+
+.info-wrapper .teperature::after{
+  content: "o";
+  font-size: 30px;
+  position: absolute;
+}
+
+.additional-section{
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding: 10px 20px;
+  flex-grow: column;
+}
+
+.additional-section .row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.additional-section .row .icon{
+  font-size: 20px;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+.additional-section .item .label{
+  font-weight: 700;
+}
+
+.additional-section .item{
+  min-width: 70%;
+  font-size: 13px;
+}
